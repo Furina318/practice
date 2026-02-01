@@ -1,0 +1,6 @@
+id:001, name:Linux, type:system, score:98
+id:002, name:grep, type:cmd, score:95
+id:003, name:find, type:cmd, score:96
+id:004, name:ls, type:cmd, score:90
+id:005, name:Linux, type:system, score:99
+id:006, name:test, type:demo, score:80

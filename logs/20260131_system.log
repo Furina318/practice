@@ -1,0 +1,5 @@
+2026-01-31 08:00: INFO  Linux system start success
+2026-01-31 08:05: ERROR grep command run fail: no file
+2026-01-31 08:10: INFO  find file /home/user/docs success
+2026-01-31 08:15: WARN  temp directory is not empty
+2026-01-31 08:20: INFO  Linux cmd practice start
