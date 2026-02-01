@@ -1,8 +1,0 @@
-grep is a powerful text search tool
-Find command can find files in Linux system
-LINUX cmd practice: grep, find, ls, cd, pwd
-test user: student1 student2
-error info: file not found
-info: success to create file
-grep -i ignore case, grep -n show line number
-find -name find file by name, find -type find file by type

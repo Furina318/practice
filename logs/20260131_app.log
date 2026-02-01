@@ -1,4 +1,0 @@
-2026-01-31 09:00: INFO  user student1 login
-2026-01-31 09:05: INFO  grep -r Linux /home/user/linux_cmd_practice
-2026-01-31 09:10: ERROR find -name *.sh: permission denied
-2026-01-31 09:15: INFO  user student2 logout
