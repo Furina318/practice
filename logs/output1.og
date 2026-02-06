@@ -1,0 +1,2099 @@
+===== run_test.sh start: 2025-12-09 23:01:02 =====
+make: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+# Building sub-longlong-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/sub-longlong-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+make[3]: Entering directory '/home/furina/ysyx-workbench/npc/obj_dir'
+/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:441:85: warning: if statement has empty body [-Wempty-body]
+            if(npc_state.state == NPC_ABORT) IFDEF(CONFIG_ITRACE,display_iringbuf());
+                                                                                    ^
+/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:441:85: note: put the semicolon on a separate line to silence this warning
+1 warning generated.
+Archive ar -rcs Vysyx_25010030_npc__ALL.a Vysyx_25010030_npc__ALL.o
+make[3]: Leaving directory '/home/furina/ysyx-workbench/npc/obj_dir'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/sub-longlong-riscv32e-npc.bin[0m, size = [33m960[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000134[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 1660[0m
+[33mIPC = 0.140297[0m
+[33m平均每条指令执行周期: 7.127711[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+# Building fib-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/fib-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/fib-riscv32e-npc.bin[0m, size = [33m584[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x800000c0[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 599[0m
+[33mIPC = 0.136664[0m
+[33m平均每条指令执行周期: 7.317195[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+# Building min3-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/min3-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/min3-riscv32e-npc.bin[0m, size = [33m704[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000168[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 1445[0m
+[33mIPC = 0.136026[0m
+[33m平均每条指令执行周期: 7.351557[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+# Building if-else-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/if-else-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/if-else-riscv32e-npc.bin[0m, size = [33m416[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x800000e8[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 359[0m
+[33mIPC = 0.146590[0m
+[33m平均每条指令执行周期: 6.821727[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+# Building dummy-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/dummy-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests/build/dummy-riscv32e-npc.bin[0m, size = [33m120[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000030[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 13[0m
+[33mIPC = 0.139785[0m
+[33m平均每条指令执行周期: 7.153846[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/cpu-tests'
+# Building gpio-test-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/gpio-test-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+make: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building addi-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/addi-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/addi-riscv32e-npc.bin[0m, size = [33m880[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000308[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 214[0m
+[33mIPC = 0.160300[0m
+[33m平均每条指令执行周期: 6.238318[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building add-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/add-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/add-riscv32e-npc.bin[0m, size = [33m1456[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000548[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 437[0m
+[33mIPC = 0.160249[0m
+[33m平均每条指令执行周期: 6.240275[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building andi-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/andi-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/andi-riscv32e-npc.bin[0m, size = [33m688[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000248[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 170[0m
+[33mIPC = 0.158730[0m
+[33m平均每条指令执行周期: 6.300000[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building and-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/and-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/and-riscv32e-npc.bin[0m, size = [33m1456[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000548[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 457[0m
+[33mIPC = 0.160520[0m
+[33m平均每条指令执行周期: 6.229759[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building auipc-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/auipc-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/auipc-riscv32e-npc.bin[0m, size = [33m300[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x800000c4[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 31[0m
+[33mIPC = 0.154229[0m
+[33m平均每条指令执行周期: 6.483871[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building beq-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/beq-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/beq-riscv32e-npc.bin[0m, size = [33m944[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000348[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 263[0m
+[33mIPC = 0.150372[0m
+[33m平均每条指令执行周期: 6.650190[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building bge-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/bge-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/bge-riscv32e-npc.bin[0m, size = [33m1008[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000388[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 281[0m
+[33mIPC = 0.147043[0m
+[33m平均每条指令执行周期: 6.800712[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building bgeu-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/bgeu-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/bgeu-riscv32e-npc.bin[0m, size = [33m1072[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x800003c8[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 306[0m
+[33mIPC = 0.148472[0m
+[33m平均每条指令执行周期: 6.735294[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building blt-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/blt-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/blt-riscv32e-npc.bin[0m, size = [33m944[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000348[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 263[0m
+[33mIPC = 0.150372[0m
+[33m平均每条指令执行周期: 6.650190[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building bltu-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/bltu-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/bltu-riscv32e-npc.bin[0m, size = [33m1008[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000388[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 288[0m
+[33mIPC = 0.151659[0m
+[33m平均每条指令执行周期: 6.593750[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building bne-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/bne-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/bne-riscv32e-npc.bin[0m, size = [33m944[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000348[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 263[0m
+[33mIPC = 0.149347[0m
+[33m平均每条指令执行周期: 6.695817[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building jalr-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/jalr-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/jalr-riscv32e-npc.bin[0m, size = [33m496[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000188[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 87[0m
+[33mIPC = 0.142857[0m
+[33m平均每条指令执行周期: 7.000000[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building jal-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/jal-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/jal-riscv32e-npc.bin[0m, size = [33m304[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x800000c8[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 27[0m
+[33mIPC = 0.152542[0m
+[33m平均每条指令执行周期: 6.555556[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building lb-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/lb-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/lb-riscv32e-npc.bin[0m, size = [33m832[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x800002c8[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 225[0m
+[33mIPC = 0.155280[0m
+[33m平均每条指令执行周期: 6.440000[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building lbu-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/lbu-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/lbu-riscv32e-npc.bin[0m, size = [33m832[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x800002c8[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 225[0m
+[33mIPC = 0.155280[0m
+[33m平均每条指令执行周期: 6.440000[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building lh-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/lh-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/lh-riscv32e-npc.bin[0m, size = [33m896[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000308[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 241[0m
+[33mIPC = 0.155987[0m
+[33m平均每条指令执行周期: 6.410788[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building lhu-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/lhu-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/lhu-riscv32e-npc.bin[0m, size = [33m960[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000348[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 250[0m
+[33mIPC = 0.156348[0m
+[33m平均每条指令执行周期: 6.396000[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building lui-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/lui-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/lui-riscv32e-npc.bin[0m, size = [33m304[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x800000c8[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 37[0m
+[33mIPC = 0.156118[0m
+[33m平均每条指令执行周期: 6.405405[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building lw-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/lw-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/lw-riscv32e-npc.bin[0m, size = [33m960[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000348[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 255[0m
+[33mIPC = 0.156538[0m
+[33m平均每条指令执行周期: 6.388235[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building ori-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/ori-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/ori-riscv32e-npc.bin[0m, size = [33m688[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000248[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 177[0m
+[33mIPC = 0.159030[0m
+[33m平均每条指令执行周期: 6.288136[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building or-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/or-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/or-riscv32e-npc.bin[0m, size = [33m1456[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000548[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 460[0m
+[33mIPC = 0.160558[0m
+[33m平均每条指令执行周期: 6.228261[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building sb-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/sb-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/sb-riscv32e-npc.bin[0m, size = [33m1408[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000508[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 426[0m
+[33mIPC = 0.151386[0m
+[33m平均每条指令执行周期: 6.605634[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building sh-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/sh-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/sh-riscv32e-npc.bin[0m, size = [33m1552[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000588[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 479[0m
+[33mIPC = 0.152937[0m
+[33m平均每条指令执行周期: 6.538622[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building simple-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/simple-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/simple-riscv32e-npc.bin[0m, size = [33m240[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000088[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 13[0m
+[33mIPC = 0.149425[0m
+[33m平均每条指令执行周期: 6.692308[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building slli-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/slli-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/slli-riscv32e-npc.bin[0m, size = [33m880[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000308[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 213[0m
+[33mIPC = 0.160271[0m
+[33m平均每条指令执行周期: 6.239437[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building sll-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/sll-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/sll-riscv32e-npc.bin[0m, size = [33m1584[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x800005c8[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 465[0m
+[33mIPC = 0.160622[0m
+[33m平均每条指令执行周期: 6.225806[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building slti-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/slti-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/slti-riscv32e-npc.bin[0m, size = [33m880[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000308[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 209[0m
+[33mIPC = 0.160153[0m
+[33m平均每条指令执行周期: 6.244019[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building sltiu-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/sltiu-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/sltiu-riscv32e-npc.bin[0m, size = [33m880[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000308[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 209[0m
+[33mIPC = 0.160153[0m
+[33m平均每条指令执行周期: 6.244019[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building slt-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/slt-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/slt-riscv32e-npc.bin[0m, size = [33m1456[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000548[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 431[0m
+[33mIPC = 0.160164[0m
+[33m平均每条指令执行周期: 6.243619[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building sltu-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/sltu-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/sltu-riscv32e-npc.bin[0m, size = [33m1456[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000548[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 431[0m
+[33mIPC = 0.160164[0m
+[33m平均每条指令执行周期: 6.243619[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building srai-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/srai-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/srai-riscv32e-npc.bin[0m, size = [33m944[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000348[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 228[0m
+[33mIPC = 0.160677[0m
+[33m平均每条指令执行周期: 6.223684[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building sra-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/sra-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/sra-riscv32e-npc.bin[0m, size = [33m1648[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000608[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 484[0m
+[33mIPC = 0.160851[0m
+[33m平均每条指令执行周期: 6.216942[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building srli-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/srli-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/srli-riscv32e-npc.bin[0m, size = [33m880[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000308[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 222[0m
+[33mIPC = 0.160521[0m
+[33m平均每条指令执行周期: 6.229730[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building srl-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/srl-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/srl-riscv32e-npc.bin[0m, size = [33m1648[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000608[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 478[0m
+[33mIPC = 0.160780[0m
+[33m平均每条指令执行周期: 6.219665[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building sub-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/sub-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/sub-riscv32e-npc.bin[0m, size = [33m1456[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000548[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 429[0m
+[33mIPC = 0.160134[0m
+[33m平均每条指令执行周期: 6.244755[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building sw-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/sw-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/sw-riscv32e-npc.bin[0m, size = [33m1568[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000588[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 486[0m
+[33mIPC = 0.153216[0m
+[33m平均每条指令执行周期: 6.526749[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building xori-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/xori-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/xori-riscv32e-npc.bin[0m, size = [33m688[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000248[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 179[0m
+[33mIPC = 0.159111[0m
+[33m平均每条指令执行周期: 6.284916[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building xor-run [riscv32e-npc]
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/am'
+# Building am-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/am'
+make[2]: Entering directory '/home/furina/ysyx-workbench/abstract-machine/klib'
+# Building klib-archive [riscv32e-npc]
+make[2]: Leaving directory '/home/furina/ysyx-workbench/abstract-machine/klib'
++ OBJCOPY -> build/xor-riscv32e-npc.bin
+mainargs=
+make[2]: Entering directory '/home/furina/ysyx-workbench/npc'
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:251 init_log] Log is written to /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/npc-log.txt[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/paddr.cpp:243 init_mem] physical memory area [0x80000000, 0x87ffffff][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'serial' at [0xa0000000, 0xa0000007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'rtc' at [0xa0002000, 0xa0002007][0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/device/io/mmio.cpp:42 add_mmio_map] Add mmio map 'keyboard' at [0xa0001000, 0xa0001003][0m
+The image is [33m/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/xor-riscv32e-npc.bin[0m, size = [33m1456[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:79 welcome] Wave: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:80 welcome] MTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:81 welcome] ITrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:82 welcome] FTrace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:83 welcome] NVBOARD: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:84 welcome] Difftest: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:85 welcome] Trace: [1;31mOFF[0m[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/monitor.cpp:89 welcome] Build time: 12:50:15, Nov 18 2025[0m
+Welcome to [1;33m[1;41mRISCV32e[0m-NPC!
+For help, type "help"
+
+[35m
+       _            _ _                                 
+ _ __ (_)_ __   ___| (_)_ __   ___       ___  ___   ___ 
+| '_ \| | '_ \ / _ \ | | '_ \ / _ \_____/ __|/ _ \ / __|
+| |_) | | |_) |  __/ | | | | |  __/_____\__ \ (_) | (__ 
+| .__/|_| .__/ \___|_|_|_| |_|\___|     |___/\___/ \___|
+|_|     |_|                                             
+[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:446 cpu_exec] [1;33m[1;41mNPC[0m: [1;32mHIT GOOD TRAP[0m at pc = 0x80000548[0m
+[1;34m[/home/furina/ysyx-workbench/npc/pipeline-soc-csrc/cpu.cpp:205 statistic] total guest instructions = 459[0m
+[33mIPC = 0.160546[0m
+[33m平均每条指令执行周期: 6.228758[0m
+make[2]: Leaving directory '/home/furina/ysyx-workbench/npc'
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building div-run [riscv32e-npc]
++ AS isa/rv32um/div.S
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S: Assembler messages:
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S:20: Error: unrecognized opcode `div x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S:21: Error: unrecognized opcode `div x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S:22: Error: unrecognized opcode `div x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S:23: Error: unrecognized opcode `div x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S:25: Error: unrecognized opcode `div x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S:26: Error: unrecognized opcode `div x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S:28: Error: unrecognized opcode `div x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S:29: Error: unrecognized opcode `div x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/div.S:30: Error: unrecognized opcode `div x14,x1,x11'
+make[1]: *** [/home/furina/ysyx-workbench/abstract-machine/Makefile:116: /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/riscv32e-npc/isa/rv32um/div.o] Error 1
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building divu-run [riscv32e-npc]
++ AS isa/rv32um/divu.S
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S: Assembler messages:
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S:20: Error: unrecognized opcode `divu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S:21: Error: unrecognized opcode `divu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S:22: Error: unrecognized opcode `divu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S:23: Error: unrecognized opcode `divu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S:25: Error: unrecognized opcode `divu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S:26: Error: unrecognized opcode `divu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S:28: Error: unrecognized opcode `divu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S:29: Error: unrecognized opcode `divu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/divu.S:30: Error: unrecognized opcode `divu x14,x1,x11'
+make[1]: *** [/home/furina/ysyx-workbench/abstract-machine/Makefile:116: /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/riscv32e-npc/isa/rv32um/divu.o] Error 1
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building mulh-run [riscv32e-npc]
++ AS isa/rv32um/mulh.S
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S: Assembler messages:
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:20: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:21: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:22: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:24: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:25: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:26: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:28: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:29: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:31: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:33: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:34: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:35: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:41: Error: unrecognized opcode `mulh x1,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:42: Error: unrecognized opcode `mulh x11,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:43: Error: unrecognized opcode `mulh x1,x1,x1'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:49: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:50: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:51: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:53: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:54: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:55: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:56: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:57: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:58: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:60: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:61: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:62: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:63: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:64: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:65: Error: unrecognized opcode `mulh x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:67: Error: unrecognized opcode `mulh x11,x0,x1'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:68: Error: unrecognized opcode `mulh x11,x1,x0'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:69: Error: unrecognized opcode `mulh x1,x0,x0'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulh.S:70: Error: unrecognized opcode `mulh x0,x1,x11'
+make[1]: *** [/home/furina/ysyx-workbench/abstract-machine/Makefile:116: /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/riscv32e-npc/isa/rv32um/mulh.o] Error 1
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building mulhsu-run [riscv32e-npc]
++ AS isa/rv32um/mulhsu.S
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S: Assembler messages:
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:20: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:21: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:22: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:24: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:25: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:26: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:28: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:29: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:31: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:33: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:34: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:35: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:41: Error: unrecognized opcode `mulhsu x1,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:42: Error: unrecognized opcode `mulhsu x11,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:43: Error: unrecognized opcode `mulhsu x1,x1,x1'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:49: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:50: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:51: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:53: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:54: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:55: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:56: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:57: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:58: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:60: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:61: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:62: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:63: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:64: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:65: Error: unrecognized opcode `mulhsu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:67: Error: unrecognized opcode `mulhsu x11,x0,x1'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:68: Error: unrecognized opcode `mulhsu x11,x1,x0'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:69: Error: unrecognized opcode `mulhsu x1,x0,x0'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhsu.S:70: Error: unrecognized opcode `mulhsu x0,x1,x11'
+make[1]: *** [/home/furina/ysyx-workbench/abstract-machine/Makefile:116: /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/riscv32e-npc/isa/rv32um/mulhsu.o] Error 1
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building mulhu-run [riscv32e-npc]
++ AS isa/rv32um/mulhu.S
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S: Assembler messages:
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:20: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:21: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:22: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:24: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:25: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:26: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:28: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:29: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:31: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:33: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:34: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:35: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:41: Error: unrecognized opcode `mulhu x1,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:42: Error: unrecognized opcode `mulhu x11,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:43: Error: unrecognized opcode `mulhu x1,x1,x1'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:49: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:50: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:51: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:53: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:54: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:55: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:56: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:57: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:58: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:60: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:61: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:62: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:63: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:64: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:65: Error: unrecognized opcode `mulhu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:67: Error: unrecognized opcode `mulhu x11,x0,x1'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:68: Error: unrecognized opcode `mulhu x11,x1,x0'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:69: Error: unrecognized opcode `mulhu x1,x0,x0'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mulhu.S:70: Error: unrecognized opcode `mulhu x0,x1,x11'
+make[1]: *** [/home/furina/ysyx-workbench/abstract-machine/Makefile:116: /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/riscv32e-npc/isa/rv32um/mulhu.o] Error 1
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building mul-run [riscv32e-npc]
++ AS isa/rv32um/mul.S
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S: Assembler messages:
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:20: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:21: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:23: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:24: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:25: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:27: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:28: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:29: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:31: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:32: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:34: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:36: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:37: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:38: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:44: Error: unrecognized opcode `mul x1,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:45: Error: unrecognized opcode `mul x11,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:46: Error: unrecognized opcode `mul x1,x1,x1'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:52: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:53: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:54: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:56: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:57: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:58: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:59: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:60: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:61: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:63: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:64: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:65: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:66: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:67: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:68: Error: unrecognized opcode `mul x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:70: Error: unrecognized opcode `mul x11,x0,x1'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:71: Error: unrecognized opcode `mul x11,x1,x0'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:72: Error: unrecognized opcode `mul x1,x0,x0'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/mul.S:73: Error: unrecognized opcode `mul x0,x1,x11'
+make[1]: *** [/home/furina/ysyx-workbench/abstract-machine/Makefile:116: /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/riscv32e-npc/isa/rv32um/mul.o] Error 1
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building rem-run [riscv32e-npc]
++ AS isa/rv32um/rem.S
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S: Assembler messages:
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S:20: Error: unrecognized opcode `rem x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S:21: Error: unrecognized opcode `rem x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S:22: Error: unrecognized opcode `rem x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S:23: Error: unrecognized opcode `rem x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S:25: Error: unrecognized opcode `rem x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S:26: Error: unrecognized opcode `rem x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S:28: Error: unrecognized opcode `rem x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S:29: Error: unrecognized opcode `rem x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/rem.S:30: Error: unrecognized opcode `rem x14,x1,x11'
+make[1]: *** [/home/furina/ysyx-workbench/abstract-machine/Makefile:116: /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/riscv32e-npc/isa/rv32um/rem.o] Error 1
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+make[1]: Entering directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+# Building remu-run [riscv32e-npc]
++ AS isa/rv32um/remu.S
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S: Assembler messages:
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S:20: Error: unrecognized opcode `remu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S:21: Error: unrecognized opcode `remu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S:22: Error: unrecognized opcode `remu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S:23: Error: unrecognized opcode `remu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S:25: Error: unrecognized opcode `remu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S:26: Error: unrecognized opcode `remu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S:28: Error: unrecognized opcode `remu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S:29: Error: unrecognized opcode `remu x14,x1,x11'
+/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/isa/rv32um/remu.S:30: Error: unrecognized opcode `remu x14,x1,x11'
+make[1]: *** [/home/furina/ysyx-workbench/abstract-machine/Makefile:116: /home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master/build/riscv32e-npc/isa/rv32um/remu.o] Error 1
+make[1]: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
+test list [46 item(s)]: addi add andi and auipc beq bge bgeu blt bltu bne jalr jal lb lbu lh lhu lui lw ori or sb sh simple slli sll slti sltiu slt sltu srai sra srli srl sub sw xori xor div divu mulh mulhsu mulhu mul rem remu
+[          addi] [1;32mPASS[0m
+[           add] [1;32mPASS[0m
+[          andi] [1;32mPASS[0m
+[           and] [1;32mPASS[0m
+[         auipc] [1;32mPASS[0m
+[           beq] [1;32mPASS[0m
+[           bge] [1;32mPASS[0m
+[          bgeu] [1;32mPASS[0m
+[           blt] [1;32mPASS[0m
+[          bltu] [1;32mPASS[0m
+[           bne] [1;32mPASS[0m
+[          jalr] [1;32mPASS[0m
+[           jal] [1;32mPASS[0m
+[            lb] [1;32mPASS[0m
+[           lbu] [1;32mPASS[0m
+[            lh] [1;32mPASS[0m
+[           lhu] [1;32mPASS[0m
+[           lui] [1;32mPASS[0m
+[            lw] [1;32mPASS[0m
+[           ori] [1;32mPASS[0m
+[            or] [1;32mPASS[0m
+[            sb] [1;32mPASS[0m
+[            sh] [1;32mPASS[0m
+[        simple] [1;32mPASS[0m
+[          slli] [1;32mPASS[0m
+[           sll] [1;32mPASS[0m
+[          slti] [1;32mPASS[0m
+[         sltiu] [1;32mPASS[0m
+[           slt] [1;32mPASS[0m
+[          sltu] [1;32mPASS[0m
+[          srai] [1;32mPASS[0m
+[           sra] [1;32mPASS[0m
+[          srli] [1;32mPASS[0m
+[           srl] [1;32mPASS[0m
+[           sub] [1;32mPASS[0m
+[            sw] [1;32mPASS[0m
+[          xori] [1;32mPASS[0m
+[           xor] [1;32mPASS[0m
+[           div] [1;31m***FAIL***[0m
+[          divu] [1;31m***FAIL***[0m
+[          mulh] [1;31m***FAIL***[0m
+[        mulhsu] [1;31m***FAIL***[0m
+[         mulhu] [1;31m***FAIL***[0m
+[           mul] [1;31m***FAIL***[0m
+[           rem] [1;31m***FAIL***[0m
+[          remu] [1;31m***FAIL***[0m
+make: *** [Makefile:52: run] Error 1
+make: Leaving directory '/home/furina/ysyx-workbench/am-kernels/tests/riscv-tests-am-master'
