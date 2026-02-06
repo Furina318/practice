@@ -54,7 +54,7 @@ check_remote() {
 # 选择分支（支持自定义或默认）
 select_branch() {
     print_info "当前本地分支列表："
-    git branch --list | sed 's/*/→/'  # 美化分支列表显示
+    git branch --list | sed 's/*/→/'  
     echo -e "\n${YELLOW}请输入要操作的分支名（默认：$DEFAULT_BRANCH）：${NC}"
     read -r input_branch
     # 如果用户没输入，使用默认分支
