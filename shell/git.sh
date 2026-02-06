@@ -1,7 +1,4 @@
 #!/bin/bash
-# Git 自动化脚本
-# 功能：拉取最新代码 → 添加所有修改 → 自定义提交 → 推送到远程
-# 支持：分支选择、提交信息确认、强制推送（需手动确认）、错误处理
 
 DEFAULT_BRANCH="tools"  # 默认分支（根据你的仓库修改
 REMOTE_NAME="origin"   # 远程仓库名称（默认 origin）
@@ -113,6 +110,11 @@ main() {
     else
         print_error "拉取代码失败（可能有冲突），请手动处理后重新运行脚本"
         exit 1
+    fi
+
+    # 检查是否有需要提交或者修改过的文件
+    if  git status | grep "working tree clean"; then
+        echo "nothing need to commit"
     fi
     
     # 添加所有修改的文件
