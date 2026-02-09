@@ -93,7 +93,7 @@ get_commit_msg() {
 
 main() {
     print_info "===== Git 自动化脚本开始执行 ====="
-    
+
     # 检查 Git 仓库
     check_git_repo
     
@@ -169,4 +169,17 @@ main() {
     print_success "当前分支：$BRANCH，提交信息：$COMMIT_MSG"
 }
 
-main
+quick_git() {
+    COMMIT_MSG=$(date +"%Y-%m-%d %H:%M:%S")
+    git add .
+    git commit -m "Auto commit : $COMMIT_MSG"
+    print_success "Quick Git 成功提交"
+}
+
+if [ "$1" == "q" ]; then
+    quick_git
+else
+    main
+fi
+
+# main
