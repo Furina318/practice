@@ -173,7 +173,8 @@ quick_git() {
     COMMIT_MSG=$(date +"%Y-%m-%d %H:%M:%S")
     git add .
     git commit -m "Auto commit : $COMMIT_MSG"
-    print_success "Quick Git 成功提交"
+    git push "$REMOTE_NAME" "$BRANCH"
+    print_success "[Quick Git] 成功提交"
 }
 
 if [ "$1" == "q" ]; then
