@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEFAULT_BRANCH="tools"  # 默认分支（根据你的仓库修改
-REMOTE_NAME="origin"   # 远程仓库名称（默认 origin）
+DEFAULT_BRANCH="tools"  # 默认分支
+REMOTE_NAME="origin"   # 远程仓库名称
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -80,7 +80,7 @@ select_branch() {
 
 # 获取提交信息
 get_commit_msg() {
-    echo -e "\n${YELLOW}请输入提交信息（必填，建议简洁明了）：${NC}"
+    echo -e "\n${YELLOW}请输入提交信息：${NC}"
     read -r commit_msg
     # 检查提交信息是否为空
     while [ -z "$commit_msg" ]; do
@@ -149,9 +149,9 @@ main() {
     
     # 推送代码到远程
     print_info "推送代码到 $REMOTE_NAME/$BRANCH..."
-    echo -e "${YELLOW}是否强制推送？（谨慎使用！仅本地分支超前远程时用，输入 yes 表示强制推送，no为普通推送）：${NC}"
+    echo -e "${YELLOW}是否强制推送？（谨慎使用！仅本地分支超前远程时用，输入 y 表示强制推送，否则为普通推送）：${NC}"
     read -r force_push
-    if [ "$force_push" = "yes" ]; then
+    if [ "$force_push" = "y" ]; then
         print_warn "执行强制推送...（风险操作）"
         git push -f "$REMOTE_NAME" "$BRANCH"
     else

@@ -52,7 +52,7 @@ check_remote() {
     fi
 }
 
-# TODO 选择分支（支持自定义或默认）
+# TODO 选择分支（支持自主动选择或默认），如果分支不存在则询问是否创建
 select_branch() {
     print_info "当前本地分支列表："
     git branch --list | sed 's/*/→/'  
@@ -60,7 +60,7 @@ select_branch() {
 
 # TODO 获取提交信息
 get_commit_msg() {
-    echo -e "\n${YELLOW}请输入提交信息（必填，建议简洁明了）：${NC}"
+    echo -e "\n${YELLOW}请输入提交信息：${NC}"
     read -r commit_msg
 }
 
@@ -120,5 +120,4 @@ main() {
     
 }
 
-# 执行主函数
 main
