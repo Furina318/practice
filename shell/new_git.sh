@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# TODO 补充完成内容（不一定有TODO提示）并找出存在的问题修改
+# TODO 补充完成内容，并找出存在的简单语法问题修改
 
 DEFAULT_BRANCH=""  
 REMOTE_NAME=""   
@@ -90,19 +90,13 @@ main() {
     print_info "确认提交信息：$COMMIT_MSG"
     echo -e "${YELLOW}是否确认提交？(y/n)${NC}"
     read -r confirm_commit
-    if [ "$confirm_commit" != "y" ] && [ "$confirm_commit" != "Y" ]; then
+    if [ "$confirm_commit" != "y" ] && [ "$confirm_commit" != "Y" ]; 
         print_info "用户取消提交，脚本退出"
         exit 0
     fi
     
-    # 提交代码
+    # TODO 提交代码
     print_info "提交代码..."
-    if git commit -m "$COMMIT_MSG"; then
-        print_success "代码提交成功"
-    else
-        print_error "提交失败（可能没有修改的文件）"
-        exit 1
-    fi
     
     # 推送代码到远程
     print_info "推送代码到 $REMOTE_NAME/$BRANCH..."
@@ -114,10 +108,11 @@ main() {
     else
         git push -f "$REMOTE_NAME" "$BRANCH"
     fi
-    # TODO　检查推送结果
-    
-    # TODO 打印脚本执行完成的提示 + 最终成功信息 
-    
+
+    # TODO　检查推送结果(利用$?)
+     
+    print_info "===== Git 自动化脚本执行完成 ====="
+    print_success "当前分支：$BRANCH，提交信息：$COMMIT_MSG"
 }
 
 quick_git() {
