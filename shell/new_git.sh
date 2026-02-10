@@ -120,7 +120,7 @@ quick_git() {
     git add .
     git commit -m "Auto commit : $COMMIT_MSG"
     git push "$REMOTE_NAME" "$BRANCH"
-    print_success "[Quick Git] 成功提交"
+    print_success "[Quick
 }
 
 if [ "$1" == "q" ]; then
