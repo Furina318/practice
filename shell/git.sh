@@ -115,6 +115,7 @@ main() {
     # 检查是否有需要提交或者修改过的文件
     if  git status | grep "working tree clean"; then
         echo "没有内容需要提交"
+        exit 0
     fi
     
     # 添加所有修改的文件
